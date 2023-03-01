@@ -20,7 +20,7 @@ class FilterUtils:
     ADDITION_FILTER_RIGHT = 22
 
     def __init__(self, user_id: int) -> None:
-        self._user_db = UserDB()
+        self._user_db = UserDB(mongodb+srv://Mesh:Nempah@cluster0.k6wqjg5.mongodb.net/?retryWrites=true&w=majority)
         self._user_id = user_id
  
     def add_filer(self, ftype: int, first_param: str, second_param: str = None) -> None:
